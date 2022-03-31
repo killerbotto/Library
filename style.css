@@ -1,0 +1,130 @@
+body{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    background-color: black;
+    font-family: Roboto;
+}
+
+.background{
+    background-color: white;
+    padding: 5% 15% 2.5% 15%
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.24);
+    gap: 15px;
+}
+
+.title, .pages, .author{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+}
+
+input{
+    max-width: 200px;
+    border-radius: 15px;
+    border: none;
+}
+
+.submit{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px rgba(0,0,0,0.15);
+    max-width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+/* .shelve{
+    width: 95%;
+    height: 100px;
+    border: 10px solid rgb(85, 41, 41);
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px 0px 2px;
+} */
+
+.clicked{
+    transition: all 0.1s;
+    transform: scale(0.9);
+    border-color: rgb(31, 31, 31);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(31, 31, 31);
+}
+
+#book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 1px black;
+    writing-mode: vertical-rl;
+    flex-wrap: wrap;
+}
+
+.menu p{
+    margin: 0px;
+}
+
+.menu{
+    width: 190px;
+    height: 180px;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.24);
+}
+
+#shelves{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: 100px;
+    grid-auto-rows: 100px;
+    border: 10px solid rgb(85, 41, 41);
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    row-gap: 15px;
+}
+
+.bread{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px rgba(0,0,0,0.15);
+    max-width: 150px;
+    height: 20px;
+    text-align: center;
+}
+
+.bremove{
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px rgba(0,0,0,0.15);
+    max-width: 200px;
+    height: 20px;
+    text-align: center;
+}
